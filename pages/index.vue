@@ -123,7 +123,7 @@
             <input v-model="question_a_17" type="radio" name="question_a_17" value=3>ややちがう<br>
             <input v-model="question_a_17" type="radio" name="question_a_17" value=4>ちがう<br>
         </p>
-        <div class="button" @click="next">- 次へ -</div>
+        <div class="button" @click="next"> 次へ </div>
       </div>
       <div v-show="page === 2" class="selection" id="page-2">
         <h2>Ｂ 最近 1 か月間のあなたの状態についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
@@ -330,8 +330,8 @@
             <input v-model="question_b_29" type="radio" name="question_b_29" value=3>しばしばあった<br>
             <input v-model="question_b_29" type="radio" name="question_b_29" value=4>ほとんどいつもあった<br>
         </p>
-        <div class="button" @click="next">- 次へ -</div>
-        <div class="button" @click="prev">- 前へ -</div>
+        <div class="button" @click="next"> 次へ </div>
+        <div class="button" @click="prev"> 前へ </div>
       </div>
       <div v-show="page === 3" class="selection" id="page-3">
         <h2>Ｃ あなたの周りの方々についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
@@ -401,7 +401,7 @@
             <input v-model="question_c_9" type="radio" name="question_c_9" value=3>多少<br>
             <input v-model="question_c_9" type="radio" name="question_c_9" value=4>全くない<br>
         </p>
-        <div class="button" @click="prev">- 前へ -</div>
+        <div class="button" @click="prev"> 前へ </div>
         <div class="button" @click="result">診断する</div>
         <br>
         <br>
@@ -851,6 +851,7 @@ export default {
     padding: 4px 0 5px;
     color: #333;
     border: 1px solid #333;
+    cursor : pointer;
 }
 
 </style>
