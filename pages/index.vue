@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <h1>ストレス診断</h1>
     <div id="allPages">
       <div v-show="page === 1" class="selection" id="page-1">
+        <h1>ストレス診断</h1>
         <h2>Ａ あなたの仕事についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
         <p id="question_a_1">
             1. 非常にたくさんの仕事をしなければならない<br>
@@ -336,7 +336,7 @@
       </div>
       <div v-show="page === 3" class="selection" id="page-3">
         <h2>Ｃ あなたの周りの方々についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
-        <h5>次の人たちはどのくらい気軽に話ができますか？</h5>
+        <h4>次の人たちはどのくらい気軽に話ができますか？</h4>
         <p id="question_c_1">
             1. 上司<br>
             <input v-model="question_c_1" type="radio" name="question_c_1" value=1>非常に<br>
@@ -358,7 +358,7 @@
             <input v-model="question_c_3" type="radio" name="question_c_3" value=3>多少<br>
             <input v-model="question_c_3" type="radio" name="question_c_3" value=4>全くない<br>
         </p>
-        <h5>あなたが困った時、次の人たちはどのくらい頼りになりますか？</h5>
+        <h4>あなたが困った時、次の人たちはどのくらい頼りになりますか？</h4>
         <p id="question_c_4">
             1. 上司<br>
             <input v-model="question_c_4" type="radio" name="question_c_4" value=1>非常に<br>
@@ -380,7 +380,7 @@
             <input v-model="question_c_6" type="radio" name="question_c_6" value=3>多少<br>
             <input v-model="question_c_6" type="radio" name="question_c_6" value=4>全くない<br>
         </p>
-        <h5>あなたの個人的な問題を相談したら、次の人たちはどのくらいきいてくれますか？</h5>
+        <h4>あなたの個人的な問題を相談したら、次の人たちはどのくらいきいてくれますか？</h4>
         <p id="question_c_7">
             1. 上司<br>
             <input v-model="question_c_7" type="radio" name="question_c_7" value=1>非常に<br>
@@ -810,7 +810,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .title {
