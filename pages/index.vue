@@ -787,9 +787,6 @@ export default {
         this.totalText = '正常'
       }
 
-      // 結果表示画面
-      // this.page += 1
-
       swal("結果", this.totalText, "success");
 
       // 再度計算すると前の結果から足してしまうので、最後に0にする。
