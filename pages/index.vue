@@ -123,7 +123,7 @@
             <input v-model="question_a_17" type="radio" name="question_a_17" value=3>ややちがう<br>
             <input v-model="question_a_17" type="radio" name="question_a_17" value=4>ちがう<br>
         </p>
-        <div @click="next">- 次へ -</div>
+        <div class="button" @click="next">- 次へ -</div>
       </div>
       <div v-show="page === 2" class="selection" id="page-2">
         <h2>Ｂ 最近 1 か月間のあなたの状態についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
@@ -239,7 +239,6 @@
             <input v-model="question_b_16" type="radio" name="question_b_16" value=3>しばしばあった<br>
             <input v-model="question_b_16" type="radio" name="question_b_16" value=4>ほとんどいつもあった<br>
         </p>
-<!-- kokokara -->
         <p id="question_b_17">
             17. 仕事が手につかない<br>
             <input v-model="question_b_17" type="radio" name="question_b_17" value=1>ほとんどなかった<br>
@@ -331,8 +330,8 @@
             <input v-model="question_b_29" type="radio" name="question_b_29" value=3>しばしばあった<br>
             <input v-model="question_b_29" type="radio" name="question_b_29" value=4>ほとんどいつもあった<br>
         </p>
-        <div @click="next">- 次へ -</div>
-        <div @click="prev">- 前へ -</div>
+        <div class="button" @click="next">- 次へ -</div>
+        <div class="button" @click="prev">- 前へ -</div>
       </div>
       <div v-show="page === 3" class="selection" id="page-3">
         <h2>Ｃ あなたの周りの方々についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
@@ -402,19 +401,17 @@
             <input v-model="question_c_9" type="radio" name="question_c_9" value=3>多少<br>
             <input v-model="question_c_9" type="radio" name="question_c_9" value=4>全くない<br>
         </p>
-        <div @click="prev">- 前へ -</div>
-        <div @click="result">診断する</div>
+        <div class="button" @click="prev">- 前へ -</div>
+        <div class="button" @click="result">診断する</div>
         <br>
         <br>
-      </div>
-      <div v-show="page === 4">
-        あなたの結果は、{{ totalText }} です。
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import swal from 'sweetalert';
 export default {
   data() {
     return {
@@ -781,9 +778,6 @@ export default {
         alert('3ページ目のquestion3か6か9がクリック出来てません！')
       }
 
-
-
-
       //ここから計算結果
       if (this.result_b <= 12) {
         this.totalText = '高ストレス'
@@ -794,7 +788,9 @@ export default {
       }
 
       // 結果表示画面
-      this.page += 1
+      // this.page += 1
+
+      swal("結果", this.totalText, "success");
 
       // 再度計算すると前の結果から足してしまうので、最後に0にする。
       this.result_a = 0
@@ -842,4 +838,16 @@ export default {
 .links {
   padding-top: 15px;
 }
+
+.button {
+    width: 120px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 4px 0 5px;
+    color: #333;
+    border: 1px solid #333;
+}
+
 </style>
