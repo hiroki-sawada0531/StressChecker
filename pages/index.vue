@@ -499,9 +499,6 @@ export default {
       result_c_1_4_7: 0, // ここからc結果
       result_c_2_5_8: 0,
       result_c_3_6_9: 0,
-
-
-
     }
   },
   methods: {
