@@ -787,7 +787,13 @@ export default {
         this.totalText = '正常'
       }
 
-      swal("結果", this.totalText, "success");
+      if (this.result_b <= 12) {
+        swal("結果", this.totalText, "warning");
+      } else if (this.result_b <= 17 && this.result_a + this.result_c <= 26)  {
+        swal("結果", this.totalText, "warning");
+      } else {
+        swal("結果", this.totalText, "success");
+      }
 
       // 再度計算すると前の結果から足してしまうので、最後に0にする。
       this.result_a = 0
