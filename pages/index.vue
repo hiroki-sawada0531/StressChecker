@@ -239,7 +239,6 @@
             <input v-model="question_b_16" type="radio" name="question_b_16" value=3>しばしばあった<br>
             <input v-model="question_b_16" type="radio" name="question_b_16" value=4>ほとんどいつもあった<br>
         </p>
-
 <!-- kokokara -->
         <p id="question_b_17">
             17. 仕事が手につかない<br>
@@ -264,73 +263,73 @@
         </p>
         <p id="question_b_20">
             20. 体のふしぶしが痛む<br>
-            <input v-model="question_b_0" type="radio" name="question_b_20" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_20" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_20" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_20" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_20" type="radio" name="question_b_20" value=1>ほとんどなかった<br>
+            <input v-model="question_b_20" type="radio" name="question_b_20" value=2>ときどきあった<br>
+            <input v-model="question_b_20" type="radio" name="question_b_20" value=3>しばしばあった<br>
+            <input v-model="question_b_20" type="radio" name="question_b_20" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_21">
             21. 頭が重かったり頭痛がする<br>
-            <input v-model="question_b_0" type="radio" name="question_b_21" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_21" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_21" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_21" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_21" type="radio" name="question_b_21" value=1>ほとんどなかった<br>
+            <input v-model="question_b_21" type="radio" name="question_b_21" value=2>ときどきあった<br>
+            <input v-model="question_b_21" type="radio" name="question_b_21" value=3>しばしばあった<br>
+            <input v-model="question_b_21" type="radio" name="question_b_21" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_22">
             22. 首筋や肩がこる<br>
-            <input v-model="question_b_0" type="radio" name="question_b_22" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_22" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_22" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_22" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_22" type="radio" name="question_b_22" value=1>ほとんどなかった<br>
+            <input v-model="question_b_22" type="radio" name="question_b_22" value=2>ときどきあった<br>
+            <input v-model="question_b_22" type="radio" name="question_b_22" value=3>しばしばあった<br>
+            <input v-model="question_b_22" type="radio" name="question_b_22" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_23">
             23. 腰が痛い<br>
-            <input v-model="question_b_0" type="radio" name="question_b_23" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_23" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_23" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_23" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_23" type="radio" name="question_b_23" value=1>ほとんどなかった<br>
+            <input v-model="question_b_23" type="radio" name="question_b_23" value=2>ときどきあった<br>
+            <input v-model="question_b_23" type="radio" name="question_b_23" value=3>しばしばあった<br>
+            <input v-model="question_b_23" type="radio" name="question_b_23" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_24">
             24. 目が疲れる<br>
-            <input v-model="question_b_0" type="radio" name="question_b_24" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_24" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_24" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_24" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_24" type="radio" name="question_b_24" value=1>ほとんどなかった<br>
+            <input v-model="question_b_24" type="radio" name="question_b_24" value=2>ときどきあった<br>
+            <input v-model="question_b_24" type="radio" name="question_b_24" value=3>しばしばあった<br>
+            <input v-model="question_b_24" type="radio" name="question_b_24" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_25">
             25. 動悸や息切れがする<br>
-            <input v-model="question_b_0" type="radio" name="question_b_25" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_25" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_25" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_25" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_25" type="radio" name="question_b_25" value=1>ほとんどなかった<br>
+            <input v-model="question_b_25" type="radio" name="question_b_25" value=2>ときどきあった<br>
+            <input v-model="question_b_25" type="radio" name="question_b_25" value=3>しばしばあった<br>
+            <input v-model="question_b_25" type="radio" name="question_b_25" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_26">
             26. 胃腸の具合が悪い<br>
-            <input v-model="question_b_0" type="radio" name="question_b_26" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_26" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_26" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_26" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_26" type="radio" name="question_b_26" value=1>ほとんどなかった<br>
+            <input v-model="question_b_26" type="radio" name="question_b_26" value=2>ときどきあった<br>
+            <input v-model="question_b_26" type="radio" name="question_b_26" value=3>しばしばあった<br>
+            <input v-model="question_b_26" type="radio" name="question_b_26" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_27">
             27. 食欲がない<br>
-            <input v-model="question_b_0" type="radio" name="question_b_27" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_27" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_27" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_27" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_27" type="radio" name="question_b_27" value=1>ほとんどなかった<br>
+            <input v-model="question_b_27" type="radio" name="question_b_27" value=2>ときどきあった<br>
+            <input v-model="question_b_27" type="radio" name="question_b_27" value=3>しばしばあった<br>
+            <input v-model="question_b_27" type="radio" name="question_b_27" value=4>ほとんどいつもあった<br>
         </p>
         <p p id="question_b_28">
             28. 便秘や下痢をする<br>
-            <input v-model="question_b_0" type="radio" name="question_b_28" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_28" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_28" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_28" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_28" type="radio" name="question_b_28" value=1>ほとんどなかった<br>
+            <input v-model="question_b_28" type="radio" name="question_b_28" value=2>ときどきあった<br>
+            <input v-model="question_b_28" type="radio" name="question_b_28" value=3>しばしばあった<br>
+            <input v-model="question_b_28" type="radio" name="question_b_28" value=4>ほとんどいつもあった<br>
         </p>
         <p p id="question_b_29">
             29. よく眠れない<br>
-            <input v-model="question_b_0" type="radio" name="question_b_29" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_29" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_29" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_29" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_29" type="radio" name="question_b_29" value=1>ほとんどなかった<br>
+            <input v-model="question_b_29" type="radio" name="question_b_29" value=2>ときどきあった<br>
+            <input v-model="question_b_29" type="radio" name="question_b_29" value=3>しばしばあった<br>
+            <input v-model="question_b_29" type="radio" name="question_b_29" value=4>ほとんどいつもあった<br>
         </p>
         <div @click="next">- 次へ -</div>
         <div @click="prev">- 前へ -</div>
@@ -340,68 +339,68 @@
         <h5>次の人たちはどのくらい気軽に話ができますか？</h5>
         <p id="question_c_1">
             1. 上司<br>
-            <input v-model="question_b_0" type="radio" name="question_c_1" value=1>非常に<br>
-            <input v-model="question_b_0" type="radio" name="question_c_1" value=2>かなり<br>
-            <input v-model="question_b_0" type="radio" name="question_c_1" value=3>多少<br>
-            <input v-model="question_b_0" type="radio" name="question_c_1" value=4>全くない<br>
+            <input v-model="question_c_1" type="radio" name="question_c_1" value=1>非常に<br>
+            <input v-model="question_c_1" type="radio" name="question_c_1" value=2>かなり<br>
+            <input v-model="question_c_1" type="radio" name="question_c_1" value=3>多少<br>
+            <input v-model="question_c_1" type="radio" name="question_c_1" value=4>全くない<br>
         </p>
         <p id="question_c_2">
             2. 職場の同僚<br>
-            <input v-model="question_b_0" type="radio" name="question_c_2" value=1>非常に<br>
-            <input v-model="question_b_0" type="radio" name="question_c_2" value=2>かなり<br>
-            <input v-model="question_b_0" type="radio" name="question_c_2" value=3>多少<br>
-            <input v-model="question_b_0" type="radio" name="question_c_2" value=4>全くない<br>
+            <input v-model="question_c_2" type="radio" name="question_c_2" value=1>非常に<br>
+            <input v-model="question_c_2" type="radio" name="question_c_2" value=2>かなり<br>
+            <input v-model="question_c_2" type="radio" name="question_c_2" value=3>多少<br>
+            <input v-model="question_c_2" type="radio" name="question_c_2" value=4>全くない<br>
         </p>
         <p id="question_c_3">
             3. 配偶者、家族、友人等<br>
-            <input v-model="question_b_0" type="radio" name="question_c_3" value=1>非常に<br>
-            <input v-model="question_b_0" type="radio" name="question_c_3" value=2>かなり<br>
-            <input v-model="question_b_0" type="radio" name="question_c_3" value=3>多少<br>
-            <input v-model="question_b_0" type="radio" name="question_c_3" value=4>全くない<br>
+            <input v-model="question_c_3" type="radio" name="question_c_3" value=1>非常に<br>
+            <input v-model="question_c_3" type="radio" name="question_c_3" value=2>かなり<br>
+            <input v-model="question_c_3" type="radio" name="question_c_3" value=3>多少<br>
+            <input v-model="question_c_3" type="radio" name="question_c_3" value=4>全くない<br>
         </p>
         <h5>あなたが困った時、次の人たちはどのくらい頼りになりますか？</h5>
         <p id="question_c_4">
             1. 上司<br>
-            <input v-model="question_b_0" type="radio" name="question_c_4" value=1>非常に<br>
-            <input v-model="question_b_0" type="radio" name="question_c_4" value=2>かなり<br>
-            <input v-model="question_b_0" type="radio" name="question_c_4" value=3>多少<br>
-            <input v-model="question_a_0" type="radio" name="question_c_4" value=4>全くない<br>
+            <input v-model="question_c_4" type="radio" name="question_c_4" value=1>非常に<br>
+            <input v-model="question_c_4" type="radio" name="question_c_4" value=2>かなり<br>
+            <input v-model="question_c_4" type="radio" name="question_c_4" value=3>多少<br>
+            <input v-model="question_c_4" type="radio" name="question_c_4" value=4>全くない<br>
         </p>
         <p id="question_c_5">
             2. 職場の同僚<br>
-            <input v-model="question_a_0" type="radio" name="question_c_5" value=1>非常に<br>
-            <input v-model="question_a_0" type="radio" name="question_c_5" value=2>かなり<br>
-            <input v-model="question_a_0" type="radio" name="question_c_5" value=3>多少<br>
-            <input v-model="question_a_0" type="radio" name="question_c_5" value=4>全くない<br>
+            <input v-model="question_c_5" type="radio" name="question_c_5" value=1>非常に<br>
+            <input v-model="question_c_5" type="radio" name="question_c_5" value=2>かなり<br>
+            <input v-model="question_c_5" type="radio" name="question_c_5" value=3>多少<br>
+            <input v-model="question_c_5" type="radio" name="question_c_5" value=4>全くない<br>
         </p>
         <p id="question_c_6">
             3. 配偶者、家族、友人等<br>
-            <input v-model="question_a_0" type="radio" name="question_c_6" value=1>非常に<br>
-            <input v-model="question_a_0" type="radio" name="question_c_6" value=2>かなり<br>
-            <input v-model="question_a_0" type="radio" name="question_c_6" value=3>多少<br>
-            <input v-model="question_a_0" type="radio" name="question_c_6" value=4>全くない<br>
+            <input v-model="question_c_6" type="radio" name="question_c_6" value=1>非常に<br>
+            <input v-model="question_c_6" type="radio" name="question_c_6" value=2>かなり<br>
+            <input v-model="question_c_6" type="radio" name="question_c_6" value=3>多少<br>
+            <input v-model="question_c_6" type="radio" name="question_c_6" value=4>全くない<br>
         </p>
         <h5>あなたの個人的な問題を相談したら、次の人たちはどのくらいきいてくれますか？</h5>
         <p id="question_c_7">
             1. 上司<br>
-            <input v-model="question_a_0" type="radio" name="question_c_7" value=1>非常に<br>
-            <input v-model="question_a_0" type="radio" name="question_c_7" value=2>かなり<br>
-            <input v-model="question_a_0" type="radio" name="question_c_7" value=3>多少<br>
-            <input v-model="question_a_0" type="radio" name="question_c_7" value=4>全くない<br>
+            <input v-model="question_c_7" type="radio" name="question_c_7" value=1>非常に<br>
+            <input v-model="question_c_7" type="radio" name="question_c_7" value=2>かなり<br>
+            <input v-model="question_c_7" type="radio" name="question_c_7" value=3>多少<br>
+            <input v-model="question_c_7" type="radio" name="question_c_7" value=4>全くない<br>
         </p>
         <p id="question_c_8">
             2. 職場の同僚<br>
-            <input v-model="question_a_0" type="radio" name="question_c_8" value=1>非常に<br>
-            <input v-model="question_a_0" type="radio" name="question_c_8" value=2>かなり<br>
-            <input v-model="question_a_0" type="radio" name="question_c_8" value=3>多少<br>
-            <input v-model="question_a_0" type="radio" name="question_c_8" value=4>全くない<br>
+            <input v-model="question_c_8" type="radio" name="question_c_8" value=1>非常に<br>
+            <input v-model="question_c_8" type="radio" name="question_c_8" value=2>かなり<br>
+            <input v-model="question_c_8" type="radio" name="question_c_8" value=3>多少<br>
+            <input v-model="question_c_8" type="radio" name="question_c_8" value=4>全くない<br>
         </p>
         <p id="question_c_9">
             3. 配偶者、家族、友人等<br>
-            <input v-model="question_a_0" type="radio" name="question_c_9" value=1>非常に<br>
-            <input v-model="question_a_0" type="radio" name="question_c_9" value=2>かなり<br>
-            <input v-model="question_a_0" type="radio" name="question_c_9" value=3>多少<br>
-            <input v-model="question_a_0" type="radio" name="question_c_9" value=4>全くない<br>
+            <input v-model="question_c_9" type="radio" name="question_c_9" value=1>非常に<br>
+            <input v-model="question_c_9" type="radio" name="question_c_9" value=2>かなり<br>
+            <input v-model="question_c_9" type="radio" name="question_c_9" value=3>多少<br>
+            <input v-model="question_c_9" type="radio" name="question_c_9" value=4>全くない<br>
         </p>
         <div @click="prev">- 前へ -</div>
         <div @click="result">診断する</div>
@@ -426,6 +425,7 @@ export default {
       result_c: 0,
       question_a_0: 0,
       question_b_0: 0,
+      question_c_0: 0,
       question_a_1: 0,
       question_a_2: 0,
       question_a_3: 0,
@@ -459,6 +459,28 @@ export default {
       question_b_14: 0,
       question_b_15: 0,
       question_b_16: 0,
+      question_b_17: 0,
+      question_b_18: 0,
+      question_b_19: 0,
+      question_b_20: 0,
+      question_b_21: 0,
+      question_b_22: 0,
+      question_b_23: 0,
+      question_b_24: 0,
+      question_b_25: 0,
+      question_b_26: 0,
+      question_b_27: 0,
+      question_b_28: 0,
+      question_b_29: 0,
+      question_c_1: 0, // ここからc
+      question_c_2: 0,
+      question_c_3: 0,
+      question_c_4: 0,
+      question_c_5: 0,
+      question_c_6: 0,
+      question_c_7: 0,
+      question_c_8: 0,
+      question_c_9: 0,
       result_a_1_2_3: 0, // ここからa結果
       result_a_4_5_6: 0,
       result_a_7: 0,
