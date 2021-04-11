@@ -243,24 +243,24 @@
 <!-- kokokara -->
         <p id="question_b_17">
             17. 仕事が手につかない<br>
-            <input v-model="question_b_0" type="radio" name="question_b_17" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_17" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_17" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_17" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_17" type="radio" name="question_b_17" value=1>ほとんどなかった<br>
+            <input v-model="question_b_17" type="radio" name="question_b_17" value=2>ときどきあった<br>
+            <input v-model="question_b_17" type="radio" name="question_b_17" value=3>しばしばあった<br>
+            <input v-model="question_b_17" type="radio" name="question_b_17" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_18">
             18. 悲しいと感じる<br>
-            <input v-model="question_b_0" type="radio" name="question_b_18" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_18" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_18" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_18" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_18" type="radio" name="question_b_18" value=1>ほとんどなかった<br>
+            <input v-model="question_b_18" type="radio" name="question_b_18" value=2>ときどきあった<br>
+            <input v-model="question_b_18" type="radio" name="question_b_18" value=3>しばしばあった<br>
+            <input v-model="question_b_18" type="radio" name="question_b_18" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_19">
             19. めまいがする<br>
-            <input v-model="question_b_0" type="radio" name="question_b_19" value=1>ほとんどなかった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_19" value=2>ときどきあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_19" value=3>しばしばあった<br>
-            <input v-model="question_b_0" type="radio" name="question_b_19" value=4>ほとんどいつもあった<br>
+            <input v-model="question_b_19" type="radio" name="question_b_19" value=1>ほとんどなかった<br>
+            <input v-model="question_b_19" type="radio" name="question_b_19" value=2>ときどきあった<br>
+            <input v-model="question_b_19" type="radio" name="question_b_19" value=3>しばしばあった<br>
+            <input v-model="question_b_19" type="radio" name="question_b_19" value=4>ほとんどいつもあった<br>
         </p>
         <p id="question_b_20">
             20. 体のふしぶしが痛む<br>
@@ -468,6 +468,18 @@ export default {
       result_a_11: 0,
       result_a_16: 0,
       result_a_17: 0,
+      result_b_1_2_3: 0, // ここからb結果
+      result_b_4_5_6: 0,
+      result_b_7_8_9: 0,
+      result_a_8_9_10: 0,
+      result_b_13_14_15_16_17_18: 0,
+      result_b_19_20_21_22_23_24_25_26_27_28_29: 0,
+      result_c_1_4_7: 0, // ここからc結果
+      result_c_2_5_8: 0,
+      result_c_3_6_9: 0,
+
+
+
     }
   },
   methods: {
@@ -603,10 +615,157 @@ export default {
       } else {
         alert('1ページ目のquestion17がクリック出来てません！')
       }
+
       // ここからB
       // ここからB
       // ここからB
 
+      this.result_b_1_2_3 = (Number(this.question_b_1) + Number(this.question_b_2) + Number(this.question_b_3))
+      if (this.result_b_1_2_3 >= 10 && this.result_b_1_2_3 <= 12) {
+        this.result_b += 5
+      } else if (this.result_b_1_2_3 >= 8 && this.result_b_1_2_3 <= 9) {
+        this.result_b += 4
+      } else if (this.result_b_1_2_3 >= 6 && this.result_b_1_2_3 <= 7) {
+        this.result_b += 3
+      } else if (this.result_b_1_2_3 >= 4 && this.result_b_1_2_3 <= 5) {
+        this.result_b += 2
+      } else if (this.result_b_1_2_3 === 3)  {
+        this.result_b += 1
+      } else {
+        alert('2ページ目のquestion1か2か3がクリック出来てません！')
+      }
+
+      this.result_b_4_5_6 = (Number(this.question_b_4) + Number(this.question_b_5) + Number(this.question_b_6))
+      if (this.result_b_4_5_6 === 3) {
+        this.result_b += 5
+      } else if (this.result_b_4_5_6 >= 4 && this.result_b_4_5_6 <= 5) {
+        this.result_b += 4
+      } else if (this.result_b_4_5_6 >= 6 && this.result_b_4_5_6 <= 7) {
+        this.result_b += 3
+      } else if (this.result_b_4_5_6 >= 8 && this.result_b_4_5_6 <= 9) {
+        this.result_b += 2
+      } else if (this.result_b_4_5_6 >= 10 && this.result_b_4_5_6 <= 12)  {
+        this.result_b += 1
+      } else {
+        alert('2ページ目のquestion4か5か6がクリック出来てません！')
+      }
+
+      this.result_b_7_8_9 = (Number(this.question_b_7) + Number(this.question_b_8) + Number(this.question_b_9))
+      if (this.result_b_7_8_9 === 3) {
+        this.result_b += 5
+      } else if (this.result_b_7_8_9 === 4) {
+        this.result_b += 4
+      } else if (this.result_b_7_8_9 >= 5 && this.result_b_7_8_9 <= 7) {
+        this.result_b += 3
+      } else if (this.result_b_7_8_9 >= 8 && this.result_b_7_8_9 <= 10) {
+        this.result_b += 2
+      } else if (this.result_b_7_8_9 >= 11 && this.result_b_7_8_9 <= 12)  {
+        this.result_b += 1
+      } else {
+        alert('2ページ目のquestion4か5か6がクリック出来てません！')
+      }
+
+      this.result_b_10_11_12 = (Number(this.question_b_10) + Number(this.question_b_11) + Number(this.question_b_12))
+      if (this.result_b_10_11_12 === 3) {
+        this.result_b += 5
+      } else if (this.result_b_10_11_12 === 4) {
+        this.result_b += 4
+      } else if (this.result_b_10_11_12 >= 5 && this.result_b_10_11_12 <= 7) {
+        this.result_b += 3
+      } else if (this.result_b_10_11_12 >= 8 && this.result_b_10_11_12 <= 9) {
+        this.result_b += 2
+      } else if (this.result_b_10_11_12 >= 10 && this.result_b_10_11_12 <= 12)  {
+        this.result_b += 1
+      } else {
+        alert('2ページ目のquestion10か11か12がクリック出来てません！')
+      }
+
+      this.result_b_13_14_15_16_17_18 = (Number(this.question_b_13) + Number(this.question_b_14)+ Number(this.question_b_15)
+      + Number(this.question_b_16) + Number(this.question_b_17) + Number(this.question_b_18))
+      if (this.result_b_13_14_15_16_17_18 === 6) {
+        this.result_b += 5
+      } else if (this.result_b_13_14_15_16_17_18 >= 7 && this.result_b_13_14_15_16_17_18 <= 8) {
+        this.result_b += 4
+      } else if (this.result_b_13_14_15_16_17_18 >= 9 && this.result_b_13_14_15_16_17_18 <= 12) {
+        this.result_b += 3
+      } else if (this.result_b_13_14_15_16_17_18 >= 13 && this.result_b_13_14_15_16_17_18 <= 16) {
+        this.result_b += 2
+      } else if (this.result_b_13_14_15_16_17_18 >= 17 && this.result_b_13_14_15_16_17_18 <= 24)  {
+        this.result_b += 1
+      } else {
+        alert('2ページ目のquestion13か14か15か16か17か18がクリック出来てません！')
+      }
+
+      this.result_b_19_20_21_22_23_24_25_26_27_28_29 = (Number(this.question_b_19) + Number(this.question_b_20)+ Number(this.question_b_21)
+      + Number(this.question_b_22) + Number(this.question_b_23) + Number(this.question_b_24) + Number(this.question_b_25) + Number(this.question_b_24)
+      + Number(this.question_b_25) + Number(this.question_b_26) + Number(this.question_b_27) + Number(this.question_b_28) + Number(this.question_b_29))
+      if (this.result_b_19_20_21_22_23_24_25_26_27_28_29 === 11) {
+        this.result_b += 5
+      } else if (this.result_b_19_20_21_22_23_24_25_26_27_28_29 >= 12 && this.result_b_19_20_21_22_23_24_25_26_27_28_29 <= 15) {
+        this.result_b += 4
+      } else if (this.result_b_19_20_21_22_23_24_25_26_27_28_29 >= 16 && this.result_b_19_20_21_22_23_24_25_26_27_28_29 <= 21) {
+        this.result_b += 3
+      } else if (this.result_b_19_20_21_22_23_24_25_26_27_28_29 >= 22 && this.result_b_19_20_21_22_23_24_25_26_27_28_29 <= 26) {
+        this.result_b += 2
+      } else if (this.result_b_19_20_21_22_23_24_25_26_27_28_29 >= 27 && this.result_b_19_20_21_22_23_24_25_26_27_28_29 <= 44)  {
+        this.result_b += 1
+      } else {
+        alert('2ページ目のquestion19か20か21か22か23か24か25か26か27か28か29がクリック出来てません！')
+      }
+
+      // ここからC
+      // ここからC
+      // ここからC
+
+      this.result_c_1_4_7 = 15 - (Number(this.question_c_1) + Number(this.question_c_4) + Number(this.question_c_7))
+      if (this.result_c_1_4_7 >= 11 && this.result_c_1_4_7 <= 12) {
+        this.result_c += 5
+      } else if (this.result_c_1_4_7 >= 9 && this.result_c_1_4_7 <= 10) {
+        this.result_c += 4
+      } else if (this.result_c_1_4_7 >= 7 && this.result_c_1_4_7 <= 8) {
+        this.result_c += 3
+      } else if (this.result_c_1_4_7 >= 5 && this.result_c_1_4_7 <= 6) {
+        this.result_c += 2
+      } else if (this.result_c_1_4_7 >= 3 && this.result_c_1_4_7 <= 4) {
+        this.result_c += 1
+      } else {
+        alert('3ページ目のquestion1か4か7がクリック出来てません！')
+      }
+
+      this.result_c_2_5_8 = 15 - (Number(this.question_c_2) + Number(this.question_c_5) + Number(this.question_c_8))
+      if (this.result_c_2_5_8 === 12) {
+        this.result_c += 5
+      } else if (this.result_c_2_5_8 >= 10 && this.result_c_2_5_8 <= 11) {
+        this.result_c += 4
+      } else if (this.result_c_2_5_8 >= 8 && this.result_c_2_5_8 <= 9) {
+        this.result_c += 3
+      } else if (this.result_c_2_5_8 >= 6 && this.result_c_2_5_8 <= 7) {
+        this.result_c += 2
+      } else if (this.result_c_2_5_8 >= 3 && this.result_c_2_5_8 <= 5) {
+        this.result_c += 1
+      } else {
+        alert('3ページ目のquestion2か5か8がクリック出来てません！')
+      }
+
+      this.result_c_3_6_9 = 15 - (Number(this.question_c_3) + Number(this.question_c_6) + Number(this.question_c_9))
+      if (this.result_c_3_6_9 === 12) {
+        this.result_c += 5
+      } else if (this.result_c_3_6_9 >= 10 && this.result_c_3_6_9 <= 11) {
+        this.result_c += 4
+      } else if (this.result_c_3_6_9 === 9) {
+        this.result_c += 3
+      } else if (this.result_c_3_6_9 >= 7 && this.result_c_3_6_9 <= 8) {
+        this.result_c += 2
+      } else if (this.result_c_3_6_9 >= 3 && this.result_c_3_6_9 <= 6) {
+        this.result_c += 1
+      } else {
+        alert('3ページ目のquestion3か6か9がクリック出来てません！')
+      }
+
+
+
+
+      //ここから計算結果
       if (this.result_b <= 12) {
         this.totalText = '高ストレス'
       } else if (this.result_b <= 17 && this.result_a + this.result_c <= 26)  {
