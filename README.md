@@ -2,8 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/69971751/114384440-aee66a80-9bc9-11eb-9aa8-2c937cf9c6fd.png" width=100%>
 
-厚生労働省が公表している
-数値基準に基づいて「高ストレス者」を選定する方法(https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei12/pdf/150803-1.pdf) を元にしたストレスチェックアプリです。
+厚生労働省が公表している数値基準に基づいて「高ストレス者」を選定する方法(https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei12/pdf/150803-1.pdf) を元にしたストレスチェックアプリです。
 
 ## :octocat:開発環境
 
