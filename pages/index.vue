@@ -784,7 +784,7 @@ export default {
       } else if (this.result_b <= 17 && this.result_a + this.result_c <= 26)  {
         this.totalText = 'あなたは高ストレス者です。'
       } else {
-        this.totalText = 'あなたは正常です。'
+        this.totalText = 'あなたは正常な精神状態です。'
       }
 
       if (this.result_b <= 12) {
