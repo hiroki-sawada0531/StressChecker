@@ -23,21 +23,11 @@ https://stress-checker.netlify.app/
 </p>
 
 
-## Build Setup
+## :pencil2:使用方法
 
-```bash
-# install dependencies
-$ npm install
+サイトURLにログイン
+<br>
+https://stress-checker.netlify.app/
+からアプリに移動します。
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+<img src="https://user-images.githubusercontent.com/69971751/114387058-fa4e4800-9bcc-11eb-9aa5-3967a72b966f.png" width=70%>
