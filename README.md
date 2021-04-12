@@ -37,7 +37,7 @@ https://stress-checker.netlify.app/
 ②設問A~Cの55個の問いに答えてください。答えたら次へボタンを押します。
 
 <img src="https://user-images.githubusercontent.com/69971751/114387787-d3444600-9bcd-11eb-96d7-1f17945001c4.png" width=70%>
-
+<br>
 ③A~Cの設問に答え終わったら最後に診断するボタンを押します。
 
 <img src="https://user-images.githubusercontent.com/69971751/114390306-0b995380-9bd1-11eb-9e82-6bafae257645.png" width=70%>
