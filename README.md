@@ -27,22 +27,25 @@
 
 ## :pencil2:使用方法
 
-①サイトURLにログイン
+<h4>①サイトURLにログイン</h4>
 <br>
 https://stress-checker.netlify.app/
 からアプリに移動します。
 
 <img src="https://user-images.githubusercontent.com/69971751/114387058-fa4e4800-9bcc-11eb-9aa5-3967a72b966f.png" width=70%>
+<br>
 
-②設問A~Cの55個の問いに答えてください。答えたら次へボタンを押します。
+<h4>②設問A~Cの55個の問いに答えてください。答えたら次へボタンを押します。</h4>
 
 <img src="https://user-images.githubusercontent.com/69971751/114387787-d3444600-9bcd-11eb-96d7-1f17945001c4.png" width=70%>
 <br>
-③A~Cの設問に答え終わったら最後に診断するボタンを押します。
+
+<h4>③A~Cの設問に答え終わったら最後に診断するボタンを押します。</h4>
 
 <img src="https://user-images.githubusercontent.com/69971751/114390306-0b995380-9bd1-11eb-9e82-6bafae257645.png" width=70%>
 <br>
-④高ストレス者か正常な精神状態であるかが合計点数によって変わります。
+
+<h4>④高ストレス者か正常な精神状態であるかが合計点数によって変わります。</h4>
 <img src="https://user-images.githubusercontent.com/69971751/114391242-3637dc00-9bd2-11eb-8596-7d284a071999.png" width=70%>
 <br>
 <img src="https://user-images.githubusercontent.com/69971751/114391292-4354cb00-9bd2-11eb-8d22-a227b0b98869.png" width=70%>
