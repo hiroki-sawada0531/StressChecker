@@ -10,7 +10,7 @@
 - Vue.js v2.6.12
 - Node.js v14.6.0
 - Npm v7.9.0
-- SweetAlert (https://sweetalert.js.org/guides/)
+- SweetAlert2 (https://sweetalert.js.org/guides/)
 - Netlify
 - VSCode（Visual Studio Code）
 
