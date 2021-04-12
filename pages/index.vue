@@ -780,11 +780,11 @@ export default {
 
       //ここから計算結果
       if (this.result_b <= 12) {
-        this.totalText = '高ストレス'
+        this.totalText = 'あなたは高ストレス者です。'
       } else if (this.result_b <= 17 && this.result_a + this.result_c <= 26)  {
-        this.totalText = '高ストレス'
+        this.totalText = 'あなたは高ストレス者です。'
       } else {
-        this.totalText = '正常'
+        this.totalText = 'あなたは正常です。'
       }
 
       if (this.result_b <= 12) {
