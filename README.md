@@ -41,3 +41,8 @@ https://stress-checker.netlify.app/
 ③A~Cの設問に答え終わったら最後に診断するボタンを押します。
 
 <img src="https://user-images.githubusercontent.com/69971751/114390306-0b995380-9bd1-11eb-9e82-6bafae257645.png" width=70%>
+<br>
+④高ストレス者か正常な精神状態であるかが合計点数によって変わります。
+<img src="https://user-images.githubusercontent.com/69971751/114391242-3637dc00-9bd2-11eb-8596-7d284a071999.png" width=70%>
+<br>
+<img src="https://user-images.githubusercontent.com/69971751/114391292-4354cb00-9bd2-11eb-8d22-a227b0b98869.png" width=70%>
