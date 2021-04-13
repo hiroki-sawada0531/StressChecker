@@ -50,3 +50,6 @@ https://stress-checker.netlify.app/
 <img src="https://user-images.githubusercontent.com/69971751/114391242-3637dc00-9bd2-11eb-8596-7d284a071999.png" width=70%>
 <br>
 <img src="https://user-images.githubusercontent.com/69971751/114391292-4354cb00-9bd2-11eb-8d22-a227b0b98869.png" width=70%>
+<br>
+
+## :eyes: 共同製作者様
