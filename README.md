@@ -22,6 +22,8 @@
   <a href="https://nodejs.org/"><img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" width="110px;" /></a>
   &emsp;
   <a href="https://www.netlify.com/"><img src="https://cdn.worldvectorlogo.com/logos/netlify.svg" height="80px;" /></a>
+  &emsp;
+  <a href="https://sweetalert.js.org/"><img src="https://user-images.githubusercontent.com/39142850/71645994-b0b55300-2d23-11ea-86c9-b16c3d2a05ee.png" height="80px;" /></a>
 </p>
 
 
