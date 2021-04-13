@@ -15,7 +15,7 @@
 - VSCode（Visual Studio Code）
 
 <p align="center">
-  <a href="https://vuejs.org/"><img src="https://ja.nuxtjs.org/logos/nuxt-icon.png" width="120px;" /></a>
+  <a href="https://vuejs.org/"><img src="https://ja.nuxtjs.org/logos/nuxt-icon.png" width="150px;" /></a>
   <br>
   <a href="https://vuejs.org/"><img src="https://jp.vuejs.org/images/logo.png" width="80px;" /></a>
   &emsp;
