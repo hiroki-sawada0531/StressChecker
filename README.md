@@ -54,6 +54,6 @@ https://stress-checker.netlify.app/
 
 ## :eyes: 共同製作者様
 <br>
-<a href ="https://avatars.githubusercontent.com/u/39142850?v=4">
+<a href ="https://github.com/aocattleya">
     <img src="https://avatars.githubusercontent.com/u/39142850?v=4" width=100px>
 </a>
