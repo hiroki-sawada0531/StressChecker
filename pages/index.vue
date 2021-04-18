@@ -1,412 +1,520 @@
 <template>
   <div class="container">
-    <div id="allPages">
       <div v-show="page === 1" class="selection" id="page-1">
         <h1>ストレス診断</h1>
         <h2>Ａ あなたの仕事についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
-        <p id="question_a_1">
+        <div class="kakomi-box">
+          <span class="title-box">
             1. 非常にたくさんの仕事をしなければならない<br>
+          </span>
             <input v-model="question_a_1" type="radio" name="question_a_1" value=4>そうだ<br>
             <input v-model="question_a_1" type="radio" name="question_a_1" value=3>まあそうだ<br>
             <input v-model="question_a_1" type="radio" name="question_a_1" value=2>ややちがう<br>
             <input v-model="question_a_1" type="radio" name="question_a_1" value=1>ちがう<br>
-        </p>
-        <p id="question_a_2">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             2. 時間内に仕事が処理しきれない<br>
+          </span>
             <input v-model="question_a_2" type="radio" name="question_a_2" value=4>そうだ<br>
             <input v-model="question_a_2" type="radio" name="question_a_2" value=3>まあそうだ<br>
             <input v-model="question_a_2" type="radio" name="question_a_2" value=2>ややちがう<br>
             <input v-model="question_a_2" type="radio" name="question_a_2" value=1>ちがう<br>
-        </p>
-        <p id="question_a_3">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             3. 一生懸命働かなければならない<br>
+          </span>
             <input v-model="question_a_3" type="radio" name="question_a_3" value=1>そうだ<br>
             <input v-model="question_a_3" type="radio" name="question_a_3" value=2>まあそうだ<br>
             <input v-model="question_a_3" type="radio" name="question_a_3" value=3>ややちがう<br>
             <input v-model="question_a_3" type="radio" name="question_a_3" value=4>ちがう<br>
-        </p>
-        <p id="question_a_4">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             4. かなり注意を集中する必要がある<br>
+          </span>
             <input v-model="question_a_4" type="radio" name="question_a_4" value=4>そうだ<br>
             <input v-model="question_a_4" type="radio" name="question_a_4" value=3>まあそうだ<br>
             <input v-model="question_a_4" type="radio" name="question_a_4" value=2>ややちがう<br>
             <input v-model="question_a_4" type="radio" name="question_a_4" value=1>ちがう<br>
-        </p>
-        <p id="question_a_5">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             5. 高度の知識や技術が必要なむずかしい仕事だ<br>
+          </span>
             <input v-model="question_a_5" type="radio" name="question_a_5" value=4>そうだ<br>
             <input v-model="question_a_5" type="radio" name="question_a_5" value=3>まあそうだ<br>
             <input v-model="question_a_5" type="radio" name="question_a_5" value=2>ややちがう<br>
             <input v-model="question_a_5" type="radio" name="question_a_5" value=1>ちがう<br>
-        </p>
-        <p id="question_a_6">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             6. 勤務時間中はいつも仕事のことを考えていなければならない<br>
+          </span>
             <input v-model="question_a_6" type="radio" name="question_a_6" value=1>そうだ<br>
             <input v-model="question_a_6" type="radio" name="question_a_6" value=2>まあそうだ<br>
             <input v-model="question_a_6" type="radio" name="question_a_6" value=3>ややちがう<br>
             <input v-model="question_a_6" type="radio" name="question_a_6" value=4>ちがう<br>
-        </p>
-        <p id="question_a_7">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             7. からだを大変よく使う仕事だ<br>
+          </span>
             <input v-model="question_a_7" type="radio" name="question_a_7" value=4>そうだ<br>
             <input v-model="question_a_7" type="radio" name="question_a_7" value=3>まあそうだ<br>
             <input v-model="question_a_7" type="radio" name="question_a_7" value=2>ややちがう<br>
             <input v-model="question_a_7" type="radio" name="question_a_7" value=1>ちがう<br>
-        </p>
-        <p id="question_a_8">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             8. 自分のペースで仕事ができる<br>
+          </span>
             <input v-model="question_a_8" type="radio" name="question_a_8" value=1>そうだ<br>
             <input v-model="question_a_8" type="radio" name="question_a_8" value=2>まあそうだ<br>
             <input v-model="question_a_8" type="radio" name="question_a_8" value=3>ややちがう<br>
             <input v-model="question_a_8" type="radio" name="question_a_8" value=4>ちがう<br>
-        </p>
-        <p id="question_a_9">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             9. 自分で仕事の順番・やり方を決めることができる<br>
+          </span>
             <input v-model="question_a_9" type="radio" name="question_a_9" value=1>そうだ<br>
             <input v-model="question_a_9" type="radio" name="question_a_9" value=2>まあそうだ<br>
             <input v-model="question_a_9" type="radio" name="question_a_9" value=3>ややちがう<br>
             <input v-model="question_a_9" type="radio" name="question_a_9" value=4>ちがう<br>
-        </p>
-        <p id="question_a_10">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             10. 職場の仕事の方針に自分の意見を反映できる<br>
+          </span>
             <input v-model="question_a_10" type="radio" name="question_a_10" value=1>そうだ<br>
             <input v-model="question_a_10" type="radio" name="question_a_10" value=2>まあそうだ<br>
             <input v-model="question_a_10" type="radio" name="question_a_10" value=3>ややちがう<br>
             <input v-model="question_a_10" type="radio" name="question_a_10" value=4>ちがう<br>
-        </p>
-        <p id="question_a_11">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             11. 自分の技能や知識を仕事で使うことが少ない<br>
+          </span>
             <input v-model="question_a_11" type="radio" name="question_a_11" value=4>そうだ<br>
             <input v-model="question_a_11" type="radio" name="question_a_11" value=3>まあそうだ<br>
             <input v-model="question_a_11" type="radio" name="question_a_11" value=2>ややちがう<br>
             <input v-model="question_a_11" type="radio" name="question_a_11" value=1>ちがう<br>
-        </p>
-        <p id="question_a_12">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             12. 私の部署内で意見のくい違いがある<br>
+          </span>
             <input v-model="question_a_12" type="radio" name="question_a_12" value=4>そうだ<br>
             <input v-model="question_a_12" type="radio" name="question_a_12" value=3>まあそうだ<br>
             <input v-model="question_a_12" type="radio" name="question_a_12" value=2>ややちがう<br>
             <input v-model="question_a_12" type="radio" name="question_a_12" value=1>ちがう<br>
-        </p>
-        <p id="question_a_13">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             13. 私の部署と他の部署とはうまが合わない<br>
+          </span>
             <input v-model="question_a_13" type="radio" name="question_a_13" value=4>そうだ<br>
             <input v-model="question_a_13" type="radio" name="question_a_13" value=3>まあそうだ<br>
             <input v-model="question_a_13" type="radio" name="question_a_13" value=2>ややちがう<br>
             <input v-model="question_a_13" type="radio" name="question_a_13" value=1>ちがう<br>
-        </p>
-        <p id="question_a_14">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             14. 私の職場の雰囲気は友好的である<br>
+          </span>
             <input v-model="question_a_14" type="radio" name="question_a_14" value=1>そうだ<br>
             <input v-model="question_a_14" type="radio" name="question_a_14" value=2>まあそうだ<br>
             <input v-model="question_a_14" type="radio" name="question_a_14" value=3>ややちがう<br>
             <input v-model="question_a_14" type="radio" name="question_a_14" value=4>ちがう<br>
-        </p>
-        <p id="question_a_15">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             15. 私の職場の作業環境（騒音、照明、温度、換気など）はよくない<br>
+          </span>
             <input v-model="question_a_15" type="radio" name="question_a_15" value=4>そうだ<br>
             <input v-model="question_a_15" type="radio" name="question_a_15" value=3>まあそうだ<br>
             <input v-model="question_a_15" type="radio" name="question_a_15" value=2>ややちがう<br>
             <input v-model="question_a_15" type="radio" name="question_a_15" value=1>ちがう<br>
-        </p>
-        <p id="question_a_16">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             16. 仕事の内容は自分にあっている<br>
+          </span>
             <input v-model="question_a_16" type="radio" name="question_a_16" value=1>そうだ<br>
             <input v-model="question_a_16" type="radio" name="question_a_16" value=2>まあそうだ<br>
             <input v-model="question_a_16" type="radio" name="question_a_16" value=3>ややちがう<br>
             <input v-model="question_a_16" type="radio" name="question_a_16" value=4>ちがう<br>
-        </p>
-        <p id="question_a_17">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             17. 働きがいのある仕事だ<br>
+          </span>
             <input v-model="question_a_17" type="radio" name="question_a_17" value=1>そうだ<br>
             <input v-model="question_a_17" type="radio" name="question_a_17" value=2>まあそうだ<br>
             <input v-model="question_a_17" type="radio" name="question_a_17" value=3>ややちがう<br>
             <input v-model="question_a_17" type="radio" name="question_a_17" value=4>ちがう<br>
-        </p>
+        </div>
         <div class="button" @click="next"> 次へ </div>
       </div>
       <div v-show="page === 2" class="selection" id="page-2">
         <h2>Ｂ 最近 1 か月間のあなたの状態についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
-        <p id="question_b_1">
+        <div class="kakomi-box">
+          <span class="title-box">
             1. 活気がわいてくる<br>
+          </span>
             <input v-model="question_b_1" type="radio" name="question_b_1" value=4>ほとんどなかった<br>
             <input v-model="question_b_1" type="radio" name="question_b_1" value=3>ときどきあった<br>
             <input v-model="question_b_1" type="radio" name="question_b_1" value=2>しばしばあった<br>
             <input v-model="question_b_1" type="radio" name="question_b_1" value=1>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_2">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             2. 元気がいっぱいだ<br>
+          </span>
             <input v-model="question_b_2" type="radio" name="question_b_2" value=4>ほとんどなかった<br>
             <input v-model="question_b_2" type="radio" name="question_b_2" value=3>ときどきあった<br>
             <input v-model="question_b_2" type="radio" name="question_b_2" value=2>しばしばあった<br>
             <input v-model="question_b_2" type="radio" name="question_b_2" value=1>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_3">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             3. 生き生きする<br>
+          </span>
             <input v-model="question_b_3" type="radio" name="question_b_3" value=4>ほとんどなかった<br>
             <input v-model="question_b_3" type="radio" name="question_b_3" value=3>ときどきあった<br>
             <input v-model="question_b_3" type="radio" name="question_b_3" value=2>しばしばあった<br>
             <input v-model="question_b_3" type="radio" name="question_b_3" value=1>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_4">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             4. 怒りを感じる<br>
+          </span>
             <input v-model="question_b_4" type="radio" name="question_b_4" value=1>ほとんどなかった<br>
             <input v-model="question_b_4" type="radio" name="question_b_4" value=2>ときどきあった<br>
             <input v-model="question_b_4" type="radio" name="question_b_4" value=3>しばしばあった<br>
             <input v-model="question_b_4" type="radio" name="question_b_4" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_5">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             5. 内心腹立たしい<br>
+          </span>
             <input v-model="question_b_5" type="radio" name="question_b_5" value=1>ほとんどなかった<br>
             <input v-model="question_b_5" type="radio" name="question_b_5" value=2>ときどきあった<br>
             <input v-model="question_b_5" type="radio" name="question_b_5" value=3>しばしばあった<br>
             <input v-model="question_b_5" type="radio" name="question_b_5" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_6">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             6. イライラしている<br>
+          </span>
             <input v-model="question_b_6" type="radio" name="question_b_6" value=1>ほとんどなかった<br>
             <input v-model="question_b_6" type="radio" name="question_b_6" value=2>ときどきあった<br>
             <input v-model="question_b_6" type="radio" name="question_b_6" value=3>しばしばあった<br>
             <input v-model="question_b_6" type="radio" name="question_b_6" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_7">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             7. ひどく疲れた<br>
+          </span>
             <input v-model="question_b_7" type="radio" name="question_b_7" value=1>ほとんどなかった<br>
             <input v-model="question_b_7" type="radio" name="question_b_7" value=2>ときどきあった<br>
             <input v-model="question_b_7" type="radio" name="question_b_7" value=3>しばしばあった<br>
             <input v-model="question_b_7" type="radio" name="question_b_7" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_8">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             8. へとへとだ<br>
+          </span>
             <input v-model="question_b_8" type="radio" name="question_b_8" value=1>ほとんどなかった<br>
             <input v-model="question_b_8" type="radio" name="question_b_8" value=2>ときどきあった<br>
             <input v-model="question_b_8" type="radio" name="question_b_8" value=3>しばしばあった<br>
             <input v-model="question_b_8" type="radio" name="question_b_8" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_9">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             9. だるい<br>
+          </span>
             <input v-model="question_b_9" type="radio" name="question_b_9" value=1>ほとんどなかった<br>
             <input v-model="question_b_9" type="radio" name="question_b_9" value=2>ときどきあった<br>
             <input v-model="question_b_9" type="radio" name="question_b_9" value=3>しばしばあった<br>
             <input v-model="question_b_9" type="radio" name="question_b_9" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_10">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             10. 気がはりつめている<br>
+          </span>
             <input v-model="question_b_10" type="radio" name="question_b_10" value=1>ほとんどなかった<br>
             <input v-model="question_b_10" type="radio" name="question_b_10" value=2>ときどきあった<br>
             <input v-model="question_b_10" type="radio" name="question_b_10" value=3>しばしばあった<br>
             <input v-model="question_b_10" type="radio" name="question_b_10" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_11">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             11. 不安だ<br>
+          </span>
             <input v-model="question_b_11" type="radio" name="question_b_11" value=1>ほとんどなかった<br>
             <input v-model="question_b_11" type="radio" name="question_b_11" value=2>ときどきあった<br>
             <input v-model="question_b_11" type="radio" name="question_b_11" value=3>しばしばあった<br>
             <input v-model="question_b_11" type="radio" name="question_b_11" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_12">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             12. 落着かない<br>
+          </span>
             <input v-model="question_b_12" type="radio" name="question_b_12" value=1>ほとんどなかった<br>
             <input v-model="question_b_12" type="radio" name="question_b_12" value=2>ときどきあった<br>
             <input v-model="question_b_12" type="radio" name="question_b_12" value=3>しばしばあった<br>
             <input v-model="question_b_12" type="radio" name="question_b_12" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_13">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             13. ゆううつだ<br>
+          </span>
             <input v-model="question_b_13" type="radio" name="question_b_13" value=1>ほとんどなかった<br>
             <input v-model="question_b_13" type="radio" name="question_b_13" value=2>ときどきあった<br>
             <input v-model="question_b_13" type="radio" name="question_b_13" value=3>しばしばあった<br>
             <input v-model="question_b_13" type="radio" name="question_b_13" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_14">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             14. 何をするのも面倒だ<br>
+          </span>
             <input v-model="question_b_14" type="radio" name="question_b_14" value=1>ほとんどなかった<br>
             <input v-model="question_b_14" type="radio" name="question_b_14" value=2>ときどきあった<br>
             <input v-model="question_b_14" type="radio" name="question_b_14" value=3>しばしばあった<br>
             <input v-model="question_b_14" type="radio" name="question_b_14" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_15">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             15. 物事に集中できない<br>
+          </span>
             <input v-model="question_b_15" type="radio" name="question_b_15" value=1>ほとんどなかった<br>
             <input v-model="question_b_15" type="radio" name="question_b_15" value=2>ときどきあった<br>
             <input v-model="question_b_15" type="radio" name="question_b_15" value=3>しばしばあった<br>
             <input v-model="question_b_15" type="radio" name="question_b_15" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_16">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             16. 気分が晴れない<br>
+          </span>
             <input v-model="question_b_16" type="radio" name="question_b_16" value=1>ほとんどなかった<br>
             <input v-model="question_b_16" type="radio" name="question_b_16" value=2>ときどきあった<br>
             <input v-model="question_b_16" type="radio" name="question_b_16" value=3>しばしばあった<br>
             <input v-model="question_b_16" type="radio" name="question_b_16" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_17">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             17. 仕事が手につかない<br>
+          </span>
             <input v-model="question_b_17" type="radio" name="question_b_17" value=1>ほとんどなかった<br>
             <input v-model="question_b_17" type="radio" name="question_b_17" value=2>ときどきあった<br>
             <input v-model="question_b_17" type="radio" name="question_b_17" value=3>しばしばあった<br>
             <input v-model="question_b_17" type="radio" name="question_b_17" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_18">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             18. 悲しいと感じる<br>
+          </span>
             <input v-model="question_b_18" type="radio" name="question_b_18" value=1>ほとんどなかった<br>
             <input v-model="question_b_18" type="radio" name="question_b_18" value=2>ときどきあった<br>
             <input v-model="question_b_18" type="radio" name="question_b_18" value=3>しばしばあった<br>
             <input v-model="question_b_18" type="radio" name="question_b_18" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_19">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             19. めまいがする<br>
+          </span>
             <input v-model="question_b_19" type="radio" name="question_b_19" value=1>ほとんどなかった<br>
             <input v-model="question_b_19" type="radio" name="question_b_19" value=2>ときどきあった<br>
             <input v-model="question_b_19" type="radio" name="question_b_19" value=3>しばしばあった<br>
             <input v-model="question_b_19" type="radio" name="question_b_19" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_20">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             20. 体のふしぶしが痛む<br>
+          </span>
             <input v-model="question_b_20" type="radio" name="question_b_20" value=1>ほとんどなかった<br>
             <input v-model="question_b_20" type="radio" name="question_b_20" value=2>ときどきあった<br>
             <input v-model="question_b_20" type="radio" name="question_b_20" value=3>しばしばあった<br>
             <input v-model="question_b_20" type="radio" name="question_b_20" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_21">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             21. 頭が重かったり頭痛がする<br>
+          </span>
             <input v-model="question_b_21" type="radio" name="question_b_21" value=1>ほとんどなかった<br>
             <input v-model="question_b_21" type="radio" name="question_b_21" value=2>ときどきあった<br>
             <input v-model="question_b_21" type="radio" name="question_b_21" value=3>しばしばあった<br>
             <input v-model="question_b_21" type="radio" name="question_b_21" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_22">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             22. 首筋や肩がこる<br>
+          </span>
             <input v-model="question_b_22" type="radio" name="question_b_22" value=1>ほとんどなかった<br>
             <input v-model="question_b_22" type="radio" name="question_b_22" value=2>ときどきあった<br>
             <input v-model="question_b_22" type="radio" name="question_b_22" value=3>しばしばあった<br>
             <input v-model="question_b_22" type="radio" name="question_b_22" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_23">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             23. 腰が痛い<br>
+          </span>
             <input v-model="question_b_23" type="radio" name="question_b_23" value=1>ほとんどなかった<br>
             <input v-model="question_b_23" type="radio" name="question_b_23" value=2>ときどきあった<br>
             <input v-model="question_b_23" type="radio" name="question_b_23" value=3>しばしばあった<br>
             <input v-model="question_b_23" type="radio" name="question_b_23" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_24">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             24. 目が疲れる<br>
+          </span>
             <input v-model="question_b_24" type="radio" name="question_b_24" value=1>ほとんどなかった<br>
             <input v-model="question_b_24" type="radio" name="question_b_24" value=2>ときどきあった<br>
             <input v-model="question_b_24" type="radio" name="question_b_24" value=3>しばしばあった<br>
             <input v-model="question_b_24" type="radio" name="question_b_24" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_25">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             25. 動悸や息切れがする<br>
+          </span>
             <input v-model="question_b_25" type="radio" name="question_b_25" value=1>ほとんどなかった<br>
             <input v-model="question_b_25" type="radio" name="question_b_25" value=2>ときどきあった<br>
             <input v-model="question_b_25" type="radio" name="question_b_25" value=3>しばしばあった<br>
             <input v-model="question_b_25" type="radio" name="question_b_25" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_26">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             26. 胃腸の具合が悪い<br>
+          </span>
             <input v-model="question_b_26" type="radio" name="question_b_26" value=1>ほとんどなかった<br>
             <input v-model="question_b_26" type="radio" name="question_b_26" value=2>ときどきあった<br>
             <input v-model="question_b_26" type="radio" name="question_b_26" value=3>しばしばあった<br>
             <input v-model="question_b_26" type="radio" name="question_b_26" value=4>ほとんどいつもあった<br>
-        </p>
-        <p id="question_b_27">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             27. 食欲がない<br>
+          </span>
             <input v-model="question_b_27" type="radio" name="question_b_27" value=1>ほとんどなかった<br>
             <input v-model="question_b_27" type="radio" name="question_b_27" value=2>ときどきあった<br>
             <input v-model="question_b_27" type="radio" name="question_b_27" value=3>しばしばあった<br>
             <input v-model="question_b_27" type="radio" name="question_b_27" value=4>ほとんどいつもあった<br>
-        </p>
-        <p p id="question_b_28">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             28. 便秘や下痢をする<br>
+          </span>
             <input v-model="question_b_28" type="radio" name="question_b_28" value=1>ほとんどなかった<br>
             <input v-model="question_b_28" type="radio" name="question_b_28" value=2>ときどきあった<br>
             <input v-model="question_b_28" type="radio" name="question_b_28" value=3>しばしばあった<br>
             <input v-model="question_b_28" type="radio" name="question_b_28" value=4>ほとんどいつもあった<br>
-        </p>
-        <p p id="question_b_29">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             29. よく眠れない<br>
+          </span>
             <input v-model="question_b_29" type="radio" name="question_b_29" value=1>ほとんどなかった<br>
             <input v-model="question_b_29" type="radio" name="question_b_29" value=2>ときどきあった<br>
             <input v-model="question_b_29" type="radio" name="question_b_29" value=3>しばしばあった<br>
             <input v-model="question_b_29" type="radio" name="question_b_29" value=4>ほとんどいつもあった<br>
-        </p>
+        </div>
         <div class="button" @click="next"> 次へ </div>
         <div class="button" @click="prev"> 前へ </div>
       </div>
       <div v-show="page === 3" class="selection" id="page-3">
         <h2>Ｃ あなたの周りの方々についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
         <h4>次の人たちはどのくらい気軽に話ができますか？</h4>
-        <p id="question_c_1">
+        <div class="kakomi-box">
+          <span class="title-box">
             1. 上司<br>
+          </span>
             <input v-model="question_c_1" type="radio" name="question_c_1" value=1>非常に<br>
             <input v-model="question_c_1" type="radio" name="question_c_1" value=2>かなり<br>
             <input v-model="question_c_1" type="radio" name="question_c_1" value=3>多少<br>
             <input v-model="question_c_1" type="radio" name="question_c_1" value=4>全くない<br>
-        </p>
-        <p id="question_c_2">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             2. 職場の同僚<br>
+          </span>
             <input v-model="question_c_2" type="radio" name="question_c_2" value=1>非常に<br>
             <input v-model="question_c_2" type="radio" name="question_c_2" value=2>かなり<br>
             <input v-model="question_c_2" type="radio" name="question_c_2" value=3>多少<br>
             <input v-model="question_c_2" type="radio" name="question_c_2" value=4>全くない<br>
-        </p>
-        <p id="question_c_3">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             3. 配偶者、家族、友人等<br>
+          </span>
             <input v-model="question_c_3" type="radio" name="question_c_3" value=1>非常に<br>
             <input v-model="question_c_3" type="radio" name="question_c_3" value=2>かなり<br>
             <input v-model="question_c_3" type="radio" name="question_c_3" value=3>多少<br>
             <input v-model="question_c_3" type="radio" name="question_c_3" value=4>全くない<br>
-        </p>
+        </div>
         <h4>あなたが困った時、次の人たちはどのくらい頼りになりますか？</h4>
-        <p id="question_c_4">
+        <div class="kakomi-box">
+          <span class="title-box">
             1. 上司<br>
+          </span>
             <input v-model="question_c_4" type="radio" name="question_c_4" value=1>非常に<br>
             <input v-model="question_c_4" type="radio" name="question_c_4" value=2>かなり<br>
             <input v-model="question_c_4" type="radio" name="question_c_4" value=3>多少<br>
             <input v-model="question_c_4" type="radio" name="question_c_4" value=4>全くない<br>
-        </p>
-        <p id="question_c_5">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             2. 職場の同僚<br>
+          </span>
             <input v-model="question_c_5" type="radio" name="question_c_5" value=1>非常に<br>
             <input v-model="question_c_5" type="radio" name="question_c_5" value=2>かなり<br>
             <input v-model="question_c_5" type="radio" name="question_c_5" value=3>多少<br>
             <input v-model="question_c_5" type="radio" name="question_c_5" value=4>全くない<br>
-        </p>
-        <p id="question_c_6">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             3. 配偶者、家族、友人等<br>
+          </span>
             <input v-model="question_c_6" type="radio" name="question_c_6" value=1>非常に<br>
             <input v-model="question_c_6" type="radio" name="question_c_6" value=2>かなり<br>
             <input v-model="question_c_6" type="radio" name="question_c_6" value=3>多少<br>
             <input v-model="question_c_6" type="radio" name="question_c_6" value=4>全くない<br>
-        </p>
+        </div>
         <h4>あなたの個人的な問題を相談したら、次の人たちはどのくらいきいてくれますか？</h4>
-        <p id="question_c_7">
+        <div class="kakomi-box">
+          <span class="title-box">
             1. 上司<br>
+          </span>
             <input v-model="question_c_7" type="radio" name="question_c_7" value=1>非常に<br>
             <input v-model="question_c_7" type="radio" name="question_c_7" value=2>かなり<br>
             <input v-model="question_c_7" type="radio" name="question_c_7" value=3>多少<br>
             <input v-model="question_c_7" type="radio" name="question_c_7" value=4>全くない<br>
-        </p>
-        <p id="question_c_8">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             2. 職場の同僚<br>
+          </span>
             <input v-model="question_c_8" type="radio" name="question_c_8" value=1>非常に<br>
             <input v-model="question_c_8" type="radio" name="question_c_8" value=2>かなり<br>
             <input v-model="question_c_8" type="radio" name="question_c_8" value=3>多少<br>
             <input v-model="question_c_8" type="radio" name="question_c_8" value=4>全くない<br>
-        </p>
-        <p id="question_c_9">
+        </div>
+        <div class="kakomi-box">
+          <span class="title-box">
             3. 配偶者、家族、友人等<br>
+          </span>
             <input v-model="question_c_9" type="radio" name="question_c_9" value=1>非常に<br>
             <input v-model="question_c_9" type="radio" name="question_c_9" value=2>かなり<br>
             <input v-model="question_c_9" type="radio" name="question_c_9" value=3>多少<br>
             <input v-model="question_c_9" type="radio" name="question_c_9" value=4>全くない<br>
-        </p>
+        </div>
         <div class="button" @click="prev"> 前へ </div>
         <div class="button" @click="result">診断する</div>
         <br>
         <br>
       </div>
-    </div>
   </div>
 </template>
 
@@ -803,6 +911,7 @@ export default {
 </script>
 
 <style>
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -810,36 +919,6 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: left;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 
 .button {
@@ -854,4 +933,23 @@ export default {
     cursor : pointer;
 }
 
+.kakomi-box {
+  position: relative;
+  margin: 2em auto;
+  padding: 1.2em;
+  color: #555555;
+  background-color: #fff;
+  border: 1px solid #555555;
+  width: 90%;
+}
+
+.title-box {
+  position: absolute;
+  padding: 0 .5em;
+  left: 20px;
+  top: -15px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #555555;
+}
 </style>
