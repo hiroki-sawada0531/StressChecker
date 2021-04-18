@@ -426,6 +426,7 @@
       </div>
       <div v-show="page === 3" class="selection" id="page-3">
         <h2>Ｃ あなたの周りの方々についてうかがいます。最もあてはまるものにチェックを入れてください。</h2>
+        <br>
         <h4>次の人たちはどのくらい気軽に話ができますか？</h4>
         <div class="kakomi-box">
           <span class="title-box">
@@ -510,8 +511,8 @@
             <input v-model="question_c_9" type="radio" name="question_c_9" value=3>多少<br>
             <input v-model="question_c_9" type="radio" name="question_c_9" value=4>全くない<br>
         </div>
-        <div class="button" @click="prev"> 前へ </div>
         <div class="button" @click="result">診断する</div>
+        <div class="button" @click="prev">前へ</div>
         <br>
         <br>
       </div>
@@ -922,6 +923,7 @@ export default {
 }
 
 .button {
+    margin: 0 auto;
     width: 120px;
     font-weight: bold;
     text-decoration: none;
@@ -931,6 +933,7 @@ export default {
     color: #333;
     border: 1px solid #333;
     cursor : pointer;
+    margin-bottom: 30px;
 }
 
 .kakomi-box {
